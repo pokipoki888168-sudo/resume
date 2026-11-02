@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>袁郡竑 | 個人履歷與簡介</title>
+  <meta name="description" content="袁郡竑的個人履歷網站 - 萬能科大企業管理系，具備門市營運、客戶服務與組織協調經驗。" />
+  
+  <!-- Google Fonts: Inter & Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Print Styles */
+    @media print {
+      header, footer, .no-print {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .shadow-sm, .shadow-md, .shadow-lg {
+        box-shadow: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#fafafa] text-slate-800 font-sans antialiased selection:bg-teal-100 selection:text-teal-900 min-h-screen flex flex-col justify-between">
+
+  <!-- 頂部導航列 (Navbar) -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200/80 transition-all">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-bold text-xl tracking-tight text-slate-900 flex items-center gap-2 hover:opacity-80 transition">
+        <span class="w-8 h-8 rounded-lg bg-teal-600 text-white flex items-center justify-center font-semibold text-sm shadow-sm">袁</span>
+        <span>袁郡竑</span>
+      </a>
+
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-teal-600 transition">關於我</a>
+        <a href="#experience" class="hover:text-teal-600 transition">工作經歷</a>
+        <a href="#skills" class="hover:text-teal-600 transition">專業職能</a>
+        <a href="#education" class="hover:text-teal-600 transition">學歷背景</a>
+        <a href="#contact" class="hover:text-teal-600 transition">聯絡方式</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" class="no-print hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition" title="列印或另存為 PDF">
+          <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+          </svg>
+          列印履歷
+        </button>
+        <a href="#contact" class="inline-flex items-center justify-center px-4 py-1.5 text-xs font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-lg shadow-sm transition">
+          聯絡我
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主要內容區 -->
+  <main class="max-w-4xl mx-auto px-6 py-12 flex-1 w-full space-y-16">
+
+    <!-- Hero / 首頁區塊 -->
+    <section class="flex flex-col-reverse md:flex-row items-center justify-between gap-8 pt-4 pb-6 border-b border-slate-200">
+      <div class="space-y-4 text-center md:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold rounded-full bg-teal-50 text-teal-700 border border-teal-200">
+          <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+          積極探索新機會與跨界成長
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+          袁郡竑 <span class="text-xl sm:text-2xl font-normal text-slate-500 block sm:inline sm:ml-2">Yuan, Jun-Hong</span>
+        </h1>
+        <p class="text-lg text-slate-600 font-medium">
+          萬能科技大學 企業管理系 ｜ 門市營運與顧客服務專員
+        </p>
+        <p class="text-slate-600 max-w-xl leading-relaxed text-sm sm:text-base">
+          具備紮實的企管思維與第一線零售門市營運實務，擅長高抗壓溝通、庫存管理、現場危機應變與流程協作。注重細節與效率，熱忱於解決顧客與團隊面臨的各項挑戰。
+        </p>
+
+        <!-- 快速聯絡列 -->
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2 text-sm text-slate-600">
+          <button onclick="copyEmail()" class="group inline-flex items-center gap-2 px-3.5 py-2 bg-white border border-slate-200 rounded-lg shadow-xs hover:border-teal-500 hover:text-teal-600 transition">
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span id="emailText">pokipoki888168@gmail.com</span>
+            <span class="text-xs text-slate-400 group-hover:text-teal-600">（點擊複製）</span>
+          </button>
+          <a href="mailto:pokipoki888168@gmail.com" class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition shadow-xs text-sm">
+            <span>寫信聯絡</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 個人頭像 -->
+      <div class="relative shrink-0">
+        <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl bg-gradient-to-tr from-teal-500 to-emerald-400 p-1 shadow-md shadow-teal-500/10">
+          <div class="w-full h-full rounded-[14px] bg-white flex flex-col items-center justify-center text-slate-700 overflow-hidden relative group">
+            <!-- 預設質感頭像占位向量圖 -->
+            <svg class="w-24 h-24 text-slate-300 group-hover:scale-105 transition duration-300" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <div class="absolute bottom-2 text-[10px] font-medium text-slate-400 bg-white/90 px-2 py-0.5 rounded-full border border-slate-100">
+              可替換大頭照
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 關於我 (About Me) -->
+    <section id="about" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-6 bg-teal-600 rounded-full"></span>
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">關於我 (About Me)</h2>
+      </div>
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+        <p>
+          我是袁郡竑，畢業於萬能科技大學企業管理系。在學期間培養了系統性的商業分析思維、行銷概念與組織營運理解，重視團隊溝通協調與實務執行力。
+        </p>
+        <p>
+          目前於 <strong>統一超商 (7-ELEVEN)</strong> 擔任門市服務專員，站在服務與零售的最前線。面對高節奏、多工環境，磨練出精準的收銀結帳、庫存盤點與突發客訴應變能力。我重視每一位顧客的體驗，並致力於維持現場營運的流暢與整潔。
+        </p>
+        <p>
+          我具備高度的抗壓性、細心嚴謹的作業態度，並持續保有對新事物的學習熱情，期望能將企業管理知識與第一線實務經驗相結合，在未來的職涯舞台發揮更大的價值。
+        </p>
+      </div>
+    </section>
+
+    <!-- 工作經歷 (Work Experience) -->
+    <section id="experience" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-6 bg-teal-600 rounded-full"></span>
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">工作經歷 (Work Experience)</h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- 7-11 經歷 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs transition hover:border-slate-300">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-4 border-b border-slate-100">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900">門市服務專員 / 店員</h3>
+              <p class="text-teal-700 font-medium text-sm">統一超商 7-ELEVEN</p>
+            </div>
+            <div class="inline-flex items-center text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full w-fit">
+              2026.07 – 現在
+            </div>
+          </div>
+
+          <div class="pt-4 space-y-3">
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400">主要職責與工作亮點</h4>
+            <ul class="space-y-2.5 text-sm text-slate-600">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-teal-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span><strong>前台結帳與高效率顧客服務：</strong> 熟練操作 POS 系統與各類多元支付，高峰期維持快速且零差錯的收銀結帳，提供親切專業的顧客體驗。</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-teal-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span><strong>商品管理與進貨盤點：</strong> 負責每日物流進貨驗收、商品上架陳列、效期與鮮度控管，確保排面整齊及降低耗損。</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-teal-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span><strong>門市清潔與環境維持：</strong> 落實門市衛生規範、機台清潔維護（咖啡機、微波爐等），營造舒適乾淨的購物空間。</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-teal-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span><strong>突發狀況與客訴應變：</strong> 具備高度耐心與同理心，妥善處理消費者疑問與現場問題，維持良好顧客關係。</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 專業職能與核心優勢 (Skills & Competencies) -->
+    <section id="skills" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-6 bg-teal-600 rounded-full"></span>
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">專業職能與核心優勢 (Core Competencies)</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- 職能 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-slate-900">門市營運與零售服務</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            熟悉 POS 系統操作、多元金流結帳、商品陳列美學、店面安全與動線維護。
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">顧客服務</span>
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">收銀結帳</span>
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">促銷推廣</span>
+          </div>
+        </div>
+
+        <!-- 職能 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-slate-900">庫存管理與細節把關</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            商品驗收與補貨調度、進銷存概念、商品效期檢視與盤點控管，減少耗損成本。
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">進出貨驗收</span>
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">庫存盤點</span>
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">鮮度把關</span>
+          </div>
+        </div>
+
+        <!-- 職能 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xs space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-slate-900">企管思維與團隊協作</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            結合大學企管背景，重視跨班交接溝通、現場工作流程優化與抗壓問題解決。
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">團隊溝通</span>
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">高抗壓性</span>
+            <span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">應變協調</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 學歷背景 (Education) -->
+    <section id="education" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-6 bg-teal-600 rounded-full"></span>
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">學歷背景 (Education)</h2>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 text-slate-700 font-bold text-lg">
+            🎓
+          </div>
+          <div class="space-y-1">
+            <h3 class="text-lg font-bold text-slate-900">萬能科技大學 (Vanung University)</h3>
+            <p class="text-teal-700 font-medium text-sm">企業管理系 ｜ 學士學位</p>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              核心修習領域：企業組織管理、行銷管理、供應鏈概論、人力資源與商務溝通實務。
+            </p>
+          </div>
+        </div>
+        <div class="sm:text-right shrink-0">
+          <span class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-full">
+            2026 年
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 聯絡方式 (Contact) -->
+    <section id="contact" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-6 bg-teal-600 rounded-full"></span>
+        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">聯絡方式 (Contact)</h2>
+      </div>
+
+      <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 sm:p-10 shadow-lg space-y-6">
+        <div class="space-y-2 max-w-xl">
+          <h3 class="text-2xl font-bold">期待與您交流！</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            無論是全職工作機會、實習合作或專案探討，隨時歡迎透過電子郵件與我聯繫，我會在最短時間內回覆您。
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+          <a href="mailto:pokipoki888168@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold text-sm transition shadow-sm">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            直接發送郵件
+          </a>
+          <button onclick="copyEmail()" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium text-sm transition border border-white/10">
+            <svg class="w-5 h-5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+            複製 Email (pokipoki888168@gmail.com)
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 頁尾 (Footer) -->
+  <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto px-6 space-y-2">
+      <p>© 2026 袁郡竑 (Yuan, Jun-Hong). All Rights Reserved.</p>
+      <p class="text-slate-400">採用簡約現代風格設計 ｜ 託管於 GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- Toast 提示彈窗 -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-slate-900 text-white text-sm px-4 py-3 rounded-xl shadow-xl flex items-center gap-2 border border-slate-700">
+    <svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+    </svg>
+    <span id="toastMessage">已成功複製 Email 到剪貼簿！</span>
+  </div>
+
+  <script>
+    function copyEmail() {
+      const email = 'pokipoki888168@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        showToast('已複製 Email: ' + email);
+      }).catch(err => {
+        console.error('複製失敗:', err);
+      });
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMessage = document.getElementById('toastMessage');
+      toastMessage.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
